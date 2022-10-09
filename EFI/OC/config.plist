@@ -20,7 +20,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>SSDT-PMC.aml</string>
+                    <string>SSDT-PLUG-DRTNIA.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -28,7 +28,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>SSDT-USB-Reset.aml</string>
+                    <string>SSDT-PNLF.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -36,7 +36,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>DSDT.aml</string>
+                    <string>SSDT-RHUB.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -52,23 +52,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>SSDT-EC.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-HPET.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-PLUG.aml</string>
+                    <string>SSDT-EC-USBX-LAPTOP.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -103,158 +87,7 @@
                 </dict>
             </array>
             <key>Patch</key>
-            <array>
-                <dict>
-                    <key>Base</key>
-                    <string></string>
-                    <key>BaseSkip</key>
-                    <integer>0</integer>
-                    <key>Comment</key>
-                    <string>HPET _CRS to XCRS Rename</string>
-                    <key>Count</key>
-                    <integer>0</integer>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Find</key>
-                    <data>JV9DUlM=</data>
-                    <key>Limit</key>
-                    <integer>0</integer>
-                    <key>Mask</key>
-                    <data></data>
-                    <key>OemTableId</key>
-                    <data>AAAAAA==</data>
-                    <key>Replace</key>
-                    <data>JVhDUlM=</data>
-                    <key>ReplaceMask</key>
-                    <data></data>
-                    <key>Skip</key>
-                    <integer>0</integer>
-                    <key>TableLength</key>
-                    <integer>0</integer>
-                    <key>TableSignature</key>
-                    <data>AAAAAA==</data>
-                </dict>
-                <dict>
-                    <key>Base</key>
-                    <string></string>
-                    <key>BaseSkip</key>
-                    <integer>0</integer>
-                    <key>Comment</key>
-                    <string>RTC IRQ 8 Patch</string>
-                    <key>Count</key>
-                    <integer>0</integer>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Find</key>
-                    <data>IgABeQA=</data>
-                    <key>Limit</key>
-                    <integer>0</integer>
-                    <key>Mask</key>
-                    <data></data>
-                    <key>OemTableId</key>
-                    <data>AAAAAA==</data>
-                    <key>Replace</key>
-                    <data>IgAAeQA=</data>
-                    <key>ReplaceMask</key>
-                    <data></data>
-                    <key>Skip</key>
-                    <integer>0</integer>
-                    <key>TableLength</key>
-                    <integer>0</integer>
-                    <key>TableSignature</key>
-                    <data>AAAAAA==</data>
-                </dict>
-                <dict>
-                    <key>Base</key>
-                    <string></string>
-                    <key>BaseSkip</key>
-                    <integer>0</integer>
-                    <key>Comment</key>
-                    <string>TIMR IRQ 0 Patch</string>
-                    <key>Count</key>
-                    <integer>0</integer>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Find</key>
-                    <data>IgEAeQA=</data>
-                    <key>Limit</key>
-                    <integer>0</integer>
-                    <key>Mask</key>
-                    <data></data>
-                    <key>OemTableId</key>
-                    <data>AAAAAA==</data>
-                    <key>Replace</key>
-                    <data>IgAAeQA=</data>
-                    <key>ReplaceMask</key>
-                    <data></data>
-                    <key>Skip</key>
-                    <integer>0</integer>
-                    <key>TableLength</key>
-                    <integer>0</integer>
-                    <key>TableSignature</key>
-                    <data>AAAAAA==</data>
-                </dict>
-                <dict>
-                    <key>Base</key>
-                    <string></string>
-                    <key>BaseSkip</key>
-                    <integer>0</integer>
-                    <key>Comment</key>
-                    <string>Replace one byte sequence with another</string>
-                    <key>Count</key>
-                    <integer>0</integer>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Find</key>
-                    <data>ESIzRA==</data>
-                    <key>Limit</key>
-                    <integer>0</integer>
-                    <key>Mask</key>
-                    <data></data>
-                    <key>OemTableId</key>
-                    <data></data>
-                    <key>Replace</key>
-                    <data>RDMiEQ==</data>
-                    <key>ReplaceMask</key>
-                    <data></data>
-                    <key>Skip</key>
-                    <integer>0</integer>
-                    <key>TableLength</key>
-                    <integer>0</integer>
-                    <key>TableSignature</key>
-                    <data></data>
-                </dict>
-                <dict>
-                    <key>Base</key>
-                    <string>\_SB.PCI0.LPCB.HPET</string>
-                    <key>BaseSkip</key>
-                    <integer>0</integer>
-                    <key>Comment</key>
-                    <string>HPET _CRS to XCRS</string>
-                    <key>Count</key>
-                    <integer>1</integer>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Find</key>
-                    <data>X0NSUw==</data>
-                    <key>Limit</key>
-                    <integer>0</integer>
-                    <key>Mask</key>
-                    <data></data>
-                    <key>OemTableId</key>
-                    <data></data>
-                    <key>Replace</key>
-                    <data>WENSUw==</data>
-                    <key>ReplaceMask</key>
-                    <data></data>
-                    <key>Skip</key>
-                    <integer>0</integer>
-                    <key>TableLength</key>
-                    <integer>0</integer>
-                    <key>TableSignature</key>
-                    <data></data>
-                </dict>
-            </array>
+            <array/>
             <key>Quirks</key>
             <dict>
                 <key>FadtEnableReset</key>
@@ -326,7 +159,7 @@
                 <key>AvoidRuntimeDefrag</key>
                 <true/>
                 <key>DevirtualiseMmio</key>
-                <false/>
+                <true/>
                 <key>DisableSingleUser</key>
                 <false/>
                 <key>DisableVariableWrite</key>
@@ -336,7 +169,7 @@
                 <key>EnableSafeModeSlide</key>
                 <true/>
                 <key>EnableWriteUnprotector</key>
-                <true/>
+                <false/>
                 <key>ForceBooterSignature</key>
                 <false/>
                 <key>ForceExitBootServices</key>
@@ -346,13 +179,13 @@
                 <key>ProtectSecureBoot</key>
                 <false/>
                 <key>ProtectUefiServices</key>
-                <false/>
+                <true/>
                 <key>ProvideCustomSlide</key>
                 <true/>
                 <key>ProvideMaxSlide</key>
                 <integer>0</integer>
                 <key>RebuildAppleMemoryMap</key>
-                <false/>
+                <true/>
                 <key>ResizeAppleGpuBars</key>
                 <integer>-1</integer>
                 <key>SetupVirtualMap</key>
@@ -360,7 +193,7 @@
                 <key>SignalAppleOS</key>
                 <false/>
                 <key>SyncRuntimePermissions</key>
-                <false/>
+                <true/>
             </dict>
         </dict>
         <key>DeviceProperties</key>
@@ -1071,7 +904,7 @@
                 <key>CustomSMBIOSGuid</key>
                 <false/>
                 <key>DisableIoMapper</key>
-                <false/>
+                <true/>
                 <key>DisableLinkeditJettison</key>
                 <true/>
                 <key>DisableRtcChecksum</key>
@@ -1101,7 +934,7 @@
                 <key>ThirdPartyDrives</key>
                 <false/>
                 <key>XhciPortLimit</key>
-                <true/>
+                <false/>
             </dict>
             <key>Scheme</key>
             <dict>
@@ -1155,7 +988,7 @@
                 <key>ApplePanic</key>
                 <true/>
                 <key>DisableWatchDog</key>
-                <true/>
+                <false/>
                 <key>DisplayDelay</key>
                 <integer>0</integer>
                 <key>DisplayLevel</key>
@@ -1191,7 +1024,7 @@
             <key>Security</key>
             <dict>
                 <key>AllowSetDefault</key>
-                <false/>
+                <true/>
                 <key>ApECID</key>
                 <integer>0</integer>
                 <key>AuthRestart</key>
